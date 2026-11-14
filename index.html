@@ -1,16 +1,271 @@
-<h1>BRAYANE DESIGN</h1>)
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRAYANE DESIGN | Creative Design Studio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #0b0f19;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            background: rgba(11, 15, 25, 0.95);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 1.2rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #f3c68f;
+        }
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #f3c68f;
+        }
+        .lang {
+            background: #1e293b;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 80px 5%;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .hero-content {
+            flex: 1;
+            min-width: 300px;
+        }
+        .subtitle {
+            color: #f3c68f;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        .hero p {
+            color: #94a3b8;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+        .btn-group {
+            display: flex;
+            gap: 15px;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #d4af37, #aa7c11);
+            color: #000;
+            padding: 12px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: opacity 0.3s;
+        }
+        .btn-secondary {
+            background: transparent;
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 12px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+        .hero-image {
+            flex: 1;
+            min-width: 300px;
+            background: #1e293b;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+        .hero-image h3 {
+            color: #f3c68f;
+            margin-top: 15px;
+        }
+        .section-title {
+            text-align: center;
+            padding: 60px 20px 20px;
+        }
+        .section-title h2 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        .section-title p {
+            color: #94a3b8;
+        }
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 40px 5%;
+        }
+        .card {
+            background: #111827;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 30px;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(212, 175, 55, 0.5);
+        }
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        .card .price {
+            font-size: 2.5rem;
+            color: #f3c68f;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .card ul {
+            list-style: none;
+            margin-bottom: 25px;
+            color: #94a3b8;
+        }
+        .card ul li {
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #64748b;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
 
-<!--
-**brayane-design/brayane-design** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+    <header>
+        <div class="logo">BRAYANE DESIGN</div>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#tarifs">Tarifs</a>
+            <a href="#commander">Commander</a>
+        </nav>
+        <div class="lang">EN</div>
+    </header>
 
-Here are some ideas to get you started:
+    <section class="hero">
+        <div class="hero-content">
+            <div class="subtitle">STUDIO CRÉATIF • DESIGN GRAPHIQUE</div>
+            <h1>Donnez de l'impact à votre marque.</h1>
+            <p>Des affiches publicitaires et des visuels modernes pour aider les petites entreprises et les marques à mieux communiquer.</p>
+            <div class="btn-group">
+                <a href="#commander" class="btn-primary">Commander un visuel</a>
+                <a href="#services" class="btn-secondary">Voir les services</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <h3>BRAYANE DESIGN</h3>
+            <p style="color: #64748b; font-size: 0.9rem;">CREATE • INSPIRE • IMPRESS</p>
+        </div>
+    </section>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+    <div class="section-title" id="services">
+        <p style="color: #f3c68f; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px;">CE QUE NOUS CRÉONS</p>
+        <h2>Des visuels qui attirent l'attention</h2>
+        <p>Des créations adaptées à votre activité, votre public et votre objectif.</p>
+    </div>
+
+    <div class="cards-container">
+        <div class="card">
+            <span style="color: #64748b; font-size: 0.8rem;">LE GRAND JARDIN</span>
+            <h3>Le goût de l'excellence.</h3>
+            <p style="color: #f3c68f; margin-bottom: 20px;">MENU SPÉCIAL • À PARTIR DE 15€</p>
+            <p style="color: #94a3b8;">Affiches publicitaires pour restaurants, boutiques, événements et promotions.</p>
+        </div>
+        <div class="card">
+            <span style="color: #64748b; font-size: 0.8rem;">NEW COLLECTION</span>
+            <h3>Own your style.</h3>
+            <p style="color: #f3c68f; margin-bottom: 20px;">FASHION • EVERYDAY</p>
+            <p style="color: #94a3b8;">Visuels pour réseaux sociaux et publications promotionnelles.</p>
+        </div>
+        <div class="card">
+            <span style="color: #64748b; font-size: 0.8rem;">YOUR BRAND</span>
+            <h3>Make it memorable.</h3>
+            <p style="color: #f3c68f; margin-bottom: 20px;">VISUAL IDENTITY</p>
+            <p style="color: #94a3b8;">Identité visuelle simple, pistes de logo, couleurs et typographies cohérentes.</p>
+        </div>
+    </div>
+
+    <div class="section-title" id="tarifs">
+        <p style="color: #f3c68f; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px;">OFFRES DE LANCEMENT</p>
+        <h2>Des tarifs simples</h2>
+        <p>Prix indicatifs de départ. Le prix final sera confirmé selon les besoins du projet.</p>
+    </div>
+
+    <div class="cards-container" id="commander">
+        <div class="card">
+            <h3>Affiche simple</h3>
+            <div class="price">$5 <span style="font-size: 1rem; color: #94a3b8;">/ design</span></div>
+            <ul>
+                <li>✔ 1 visuel publicitaire</li>
+                <li>✔ Format adapté aux réseaux</li>
+                <li>✔ 1 demande de modification</li>
+            </ul>
+        </div>
+        <div class="card" style="border-color: #d4af37;">
+            <h3>Affiche professionnelle</h3>
+            <div class="price">$10 <span style="font-size: 1rem; color: #94a3b8;">/ design</span></div>
+            <ul>
+                <li>✔ 1 visuel personnalisé</li>
+                <li>✔ Hiérarchie visuelle soignée</li>
+                <li>✔ Jusqu'à 2 demandes de modification</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Pack de 5 affiches</h3>
+            <div class="price">$35 <span style="font-size: 1rem; color: #94a3b8;">/ pack</span></div>
+            <ul>
+                <li>✔ 5 visuels coordonnés</li>
+                <li>✔ Style cohérent</li>
+                <li>✔ Jusqu'à 2 demandes par visuel</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>Brayane Design • Tous droits réservés © 2026</p>
+    </footer>
+
+</body>
+</html>
